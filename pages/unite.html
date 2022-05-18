@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta SEO -->
+    <meta name="keywords" content="Contacto, Formularios, Snekaers, Zapatillas, ">
+    <meta name="description" content="SNK es una comunidad dedicada a la venta de zapatillas importadas, tambien encontraras las mejores noticias relacionadas a la moda, deportes y lo mas importante Sneakers!">
 
     <!-- Link Main Css -->
     <link rel="stylesheet" href="../css/main.css">
@@ -112,15 +115,90 @@
     </header>
         <!-- Main Unite.html -->
         <main class="mainUnite">
-            <section class="">
-                <h1 class="titulos">Unite al Club SNK</h1>
-                <p class="parrafos">Dejanos tu E-Mail para ser parte de nuestra comunidad y recibir las ultimas noticias, actualizaciones y novedades de la pagina!</p>
+            <section class="form">
+                <article class="textoForm">
+                    <h1 class="titulos">Unite al Club SNK</h1>
+                    <p class="parrafos">Dejanos algunos datos para ser parte de nuestra comunidad y recibir las ultimas noticias, actualizaciones y novedades de la pagina!</p>
+                </article>
+                <article class="artForm">
+                    <!-- Formulario -->
+                    <form action="">
+                        <fieldset>
+                            <legend class="titForms">Club SNK!</legend>
+                            <div class="inputs">
+                                
+                                <input class="inpDatos" type="text" name="nombre" placeholder="Completa tu nombre">
+                            </div>
+                            <div class="inputs">
+                                
+                                <input class="inpDatos" type="text" name="apellido" placeholder="Completa tu apellido">
+                            </div>
+                            <div class="inputs">
+                                
+                                <input class="inpDatos" type="email" name="email" placeholder="Completa tu E-Mail">
+                            </div>
+                            <div class="inputs">
+                                <div>
+                                    <select required name="pais" id="pais" >
+                                        <option value="" disabled selected hidden>Seleccione su pais</option>
+                                        <option value="0">Argentina</option>
+                                        <option value="1">Chile</option>
+                                        <option value="2">Colombia</option>
+                                        <option value="3">Venezuela</option>
+                                        <option value="4">Peru</option>
+                                        <option value="5">Brasil</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <label for="genero" style="font-weight: bold;">GENERO</label>
+                                <!-- opciones de genero -->
+                                <div class="optGen" >
+                                    <div>
+                                        Mujer<input class="inpGen" type="radio" name="genero" value="mujer">
+                                    </div>
+                                    <div>
+                                        Hombre<input class="inpGen" type="radio" name="genero" value="hombre">
+                                    </div>
+                                    <div>
+                                        Prefiero no decirlo<input class="inpGen" type="radio" name="genero" value="no">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="inputs">
+                                <input class="boton btnForm" type="submit">
+                                <input class="boton btnForm" type="reset">
+                            </div>
+                        </fieldset>
+                    </form>
+                    <!-- iframe google maps -->
+                    <div class="mapa"> 
+                        <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=belgrano+(SNK)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/car-satnav-gps/">GPS car tracker</a></iframe></div>
+                    </div >
+                </article>
+               
 
             </section>
 
             <section>
                 <h2 class="titulos">CONSULTA</h2>
                 <p class="parrafos">Dejanos cualquier duda/consulta que tengas respecto a nuestra pagina rellenando el formulario!</p>
+            </section>
+            <section class="secConsulta">
+                <form action="">
+                    <fieldset>
+                        <div class="divConsulta">
+                            <input type="email" placeholder="E-Mail" class="inpEmail">
+                        </div>
+                        <div class="divConsulta">
+                            <input type="text" placeholder="Consulta" class="inpConsulta">
+                        </div>
+                        <div class="divConsulta">
+                            <input class="boton btnForm" type="submit">
+                            <input class="boton btnForm" type="reset">
+                        </div>
+                    </fieldset>
+                </form>
             </section>
         </main>
 

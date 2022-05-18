@@ -17,6 +17,12 @@
   max-height: 500px;
   max-width: 500px; }
 
+.responsive1000 {
+  width: 100%;
+  height: auto;
+  max-height: 563px;
+  max-width: 1200px; }
+
 header {
   font-family: "Vazirmatn", sans-serif; }
 
@@ -184,6 +190,13 @@ footer {
   .listItem a {
     display: none; } }
 
+.parrafosCarrusel {
+  color: #fff;
+  font-family: "Vazirmatn", sans-serif;
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.35);
+  display: inline; }
+
 .carruselMain {
   padding: 3px 20px; }
 
@@ -340,15 +353,112 @@ footer {
     text-align: center; }
 
 .mainUnite {
-  display: grid;
-  grid-template-columns: 100%; }
+  padding: 0 10px;
+  width: 100%; }
+  .mainUnite .btnForm {
+    margin: 5px 50px; }
+  .mainUnite .titForms {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-family: "Mukta", sans-serif; }
+  .mainUnite .textoForm {
+    padding: 10px; }
   .mainUnite section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    width: 100%;
     text-align: center; }
+  .mainUnite .artForm {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 5px; }
+    .mainUnite .artForm form {
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      width: 60%; }
+      .mainUnite .artForm form fieldset {
+        width: 100%; }
+      .mainUnite .artForm form .inputs {
+        margin: 25px 0;
+        text-align: center; }
+        .mainUnite .artForm form .inputs select:invalid {
+          color: gray; }
+        .mainUnite .artForm form .inputs .inpDatos {
+          padding: 2px 20px; }
+        .mainUnite .artForm form .inputs input {
+          text-align: center; }
+        .mainUnite .artForm form .inputs .optGen {
+          margin: 15px 0;
+          display: flex;
+          align-content: center;
+          justify-content: center; }
+        .mainUnite .artForm form .inputs .inpGen {
+          margin: 0px 15px; }
+    .mainUnite .artForm .mapa {
+      width: 700px;
+      padding: 10px 10px; }
+  .mainUnite .secConsulta {
+    width: 100%; }
+  .mainUnite .divConsulta {
+    margin: 20px 0; }
+  .mainUnite .inpConsulta {
+    height: 300px;
+    width: 50%;
+    text-align: center;
+    font-size: 18px;
+    text-transform: uppercase; }
+  .mainUnite .inpEmail {
+    width: 30%;
+    text-align: center;
+    text-transform: uppercase; }
 
 .mainNov {
-  height: 1000px;
-  padding: 10px; }
+  width: 100%; }
+
+.notMain {
+  display: flex;
+  justify-content: center;
+  flex-direction: row-reverse;
+  flex-wrap: wrap; }
+  .notMain .divTextNov {
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    .notMain .divTextNov h1 {
+      font-size: 30px;
+      text-transform: uppercase;
+      font-family: "Mukta", sans-serif; }
+  .notMain .divImgNot {
+    padding: 5px;
+    display: inline;
+    text-align: center;
+    align-items: center; }
+
+.notSec {
+  margin: 10px 0;
+  padding: 5px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 5px;
+  text-align: center; }
+  .notSec .divNotSec {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .notSec .divNotSec h2 {
+      text-transform: uppercase;
+      font-family: "Mukta", sans-serif;
+      font-size: 30px; }
+    .notSec .divNotSec h3 {
+      text-transform: uppercase;
+      font-family: "Mukta", sans-serif;
+      font-size: 30px; }
+  .notSec .prueba {
+    margin: 10px 0; }
+
+hr {
+  border: 1px solid gainsboro; }

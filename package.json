@@ -1,7 +1,7 @@
 {
-  "name": "proyecto",
+  "name": "SNK",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina web para el proyecto final, llamad SNK, donde se encuentra muchas cosas, como noticias, y un apartadod a modo de tienda con las zapatillas disponibles, 5 htmls.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
